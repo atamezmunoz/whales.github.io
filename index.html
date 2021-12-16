@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<meta charset="utf-8">
+          
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v6.js"></script>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Save Whales</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>The loudest animal in the <br />
+						world needs your voice</h1>
+						<p>Stop Whaling</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Save Whales</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Total impact</a></li>
+							<li><a href="generic.html">Who is Responsable</a></li>
+							<li><a href="elements.html">Impact though time</a></li>
+
+						</ul>
+						<ul class="icons">
+							<li><a href="https://iwc.int/total-catches" class="dataSet"><span class="label">Data Source</span></a></li>
+							<li><a href="https://www.greenpeace.org/usa/oceans/save-the-whales/" class="greenpeace"><span class="label">GreenPeace</span></a></li>
+							<li><a href="https://seashepherd.org/divina-guadalupe/?gclid=CjwKCAiAnO2MBhApEiwA8q0HYSCieAoTQj5Q8sqnbQel-6gy0Uz2Zd8CLvYObILwZdFvTBN3aj3y7xoCw6cQAvD_BwE" class="SeaShepherd"><span class="label">SeaShepherd</span></a></li>
+							<li><a href="https://iwc.int/home" class="IWC"><span class="label">IWC</span></a></li>
+
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h2><a href="#">Our impacts<br />
+									add up</a></h2>
+									<p>Over 50,000 whales have been killed since 1985, the following graphs shows the<br />
+									 different species of whales and how many have been killed since 1985.<br />
+									Every dot represents <b>100 whales.</b></p>
+								</header>
+								<!--Multiple packing graph showing how many whales have been killed in total-->
+								<div id="my_dataviz"></div>
+
+								
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<span class="date">1986 vs. 2020</span>
+										<h2><a href="#">Whales killed in 1986  <br />
+										vs. whales killed in 2020</a></h2>
+									</header>
+									<button onclick="update(bf1)">1986</button>
+									<button onclick="update(bf2)">2020</button>
+									<!--Bar chart of totla whales killed since the first records vs. today-->
+							<div id="beforeAfter"></div>
+							
+								</article>
+								<article>
+									<header>
+										<span class="date">1986 - 2020</span>
+										<h2><a href="#">Whales killed from <br>1986 - 2020</a></h2>
+									</header>
+									<!--Line chart that shows how many whales have been killed total though time-->
+                  	<div id="totalKilled"></div>
+
+
+								</article>
+								
+							</section>
+
+
+					</div>
+
+				<!-- Footer -->
+
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+      <script src="JavaScript/totalKilled.js"></script>
+      <script src="JavaScript/packinggraph.js"></script>
+      <script src="JavaScript/beforeAfterBarChart.js"></script>
+
+
+
+
+	</body>
+</html>
